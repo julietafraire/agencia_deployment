@@ -1,0 +1,32 @@
+extends ../layout/index
+block slider
+    .slider
+        h1 Rio de Janeiro
+        em aventura
+
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6
+                p  Aliquam scelerisque turpis vitae nibh maximus, in aliquet lectus elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque est tortor, ornare ac fringilla ut, euismod at eros. Curabitur id tortor sem. 
+                
+                p Nullam odio nulla, condimentum sit amet leo eu, hendrerit maximus nulla. Quisque efficitur lacus ligula. Cras dignissim, magna eget lobortis suscipit, nisl purus congue justo, quis sagittis lectus ligula sed sapien.
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", class="img-fluid")
+        h2.text-center.mb-5 Próximos viajes
+        include ../layout/partials/viajes
+    .descuento
+        .container
+            .row
+                .col-md-6
+                    .contenido 
+                        h3 5% de Descuento
+                        p.titulo Viaje a Canada
+                        p.fecha 20 de Diciembre 2020 - 28 de Diciembre 2020
+                        p.precio $3000 USD
+
+    .container
+        h2.text-center.my-5 Testimoniales
+        include ../layout/partials/testimoniales
+
